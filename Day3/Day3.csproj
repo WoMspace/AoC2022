@@ -1,0 +1,45 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <OutputType>Exe</OutputType>
+        <TargetFramework>net7.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <Content Include="obj\Day3.csproj.nuget.dgspec.json" />
+      <Content Include="obj\Day3.csproj.nuget.g.props" />
+      <Content Include="obj\Day3.csproj.nuget.g.targets" />
+      <Content Include="obj\Debug\net7.0\Day3.AssemblyInfoInputs.cache" />
+      <Content Include="obj\Debug\net7.0\Day3.assets.cache" />
+      <Content Include="obj\Debug\net7.0\Day3.csproj.AssemblyReference.cache" />
+      <Content Include="obj\Debug\net7.0\Day3.csproj.FileListAbsolute.txt" />
+      <Content Include="obj\Debug\net7.0\Day3.GeneratedMSBuildEditorConfig.editorconfig" />
+      <Content Include="obj\project.assets.json" />
+      <Content Include="obj\project.nuget.cache" />
+      <Content Include="obj\project.packagespec.json" />
+      <Content Include="obj\rider.project.restore.info" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Compile Include="obj\Debug\net7.0\.NETCoreApp,Version=v7.0.AssemblyAttributes.cs" />
+      <Compile Include="obj\Debug\net7.0\Day3.AssemblyInfo.cs" />
+      <Compile Include="obj\Debug\net7.0\Day3.GlobalUsings.g.cs" />
+      <Compile Remove="obj\**" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="obj\Debug\net7.0\ref" />
+      <Folder Include="obj\Debug\net7.0\refint" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <EmbeddedResource Remove="obj\**" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <None Remove="obj\**" />
+    </ItemGroup>
+
+</Project>
