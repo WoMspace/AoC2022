@@ -1,6 +1,6 @@
 ﻿// using Helper.Input;
 
-string   fileName = "";
+string   fileName = args[0];
 string[] file     = File.ReadAllLines(fileName);
 
 // Part 1
@@ -8,11 +8,8 @@ int count = 0;
 foreach(string line in file)
 {
 	var pair = ParsePair(line);
-	if(pair.Elf1.Start.Value <= pair.Elf2.Start.Value && pair.Elf1.End.Value >= pair.Elf2.End.Value)
-	{
-		count++;
-	}
-	else if(pair.Elf2.Start.Value <= pair.Elf1.Start.Value && pair.Elf2.End.Value >= pair.Elf1.End.Value)
+	if((pair.Elf1.Start.Value <= pair.Elf2.Start.Value && pair.Elf1.End.Value >= pair.Elf2.End.Value) 
+	   || (pair.Elf2.Start.Value <= pair.Elf1.Start.Value && pair.Elf2.End.Value >= pair.Elf1.End.Value))
 	{
 		count++;
 	}
@@ -23,15 +20,27 @@ Console.WriteLine($"{count} pairs entirely overlap.");
 count = 0;
 foreach(string line in file)
 {
-	var pair = ParsePair(line);
-	if(pair.Elf1.End.Value >= pair.Elf2.Start.Value && pair.Elf1.Start.Value < pair.Elf2.Start.Value)
+	var (elf1, elf2) = ParsePair(line);
+	// if((elf1.Start.Value <= elf2.Start.Value && elf1.End.Value >= elf2.End.Value)
+	//    || (elf2.Start.Value <= elf1.Start.Value && elf2.End.Value >= elf1.End.Value)
+	//    || (elf1.Start.Value >= elf2.End.Value && elf1.Start.Value <= elf2.Start.Value)
+	//    || (elf1.End.Value <= elf2.End.Value && elf1.End.Value >= elf2.Start.Value))
+	// {
+	// 	count++;
+	// }
+
+	for(int i = elf1.Start.Value; i <= elf1.End.Value; i++)
 	{
-		count++;
+		for(int j = elf2.Start.Value; j <= elf2.End.Value; j++)
+		{
+			if(i == j)
+			{
+				count++;
+				goto escape;				
+			}
+		}
 	}
-	else if(pair.Elf2.End.Value >= pair.Elf1.Start.Value && pair.Elf2.Start.Value < pair.Elf1.Start.Value)
-	{
-		count++;
-	}
+	escape: ;
 }
 Console.WriteLine($"{count} pairs overlap at least slightly.");
 
