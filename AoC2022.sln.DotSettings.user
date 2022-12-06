@@ -1,9 +1,11 @@
 ﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
-	<s:String x:Key="/Default/CodeInspection/PencilsConfiguration/ActualSeverity/@EntryValue">WARNING</s:String>
+	<s:String x:Key="/Default/CodeInspection/PencilsConfiguration/ActualSeverity/@EntryValue">INFO</s:String>
 	<s:Boolean x:Key="/Default/UnloadedProject/UnloadedProjects/=0cefaddc_002D611f_002D4ea7_002Da14e_002D38a1825aab99_0023Day4/@EntryIndexedValue">True</s:Boolean>
 	<s:Boolean x:Key="/Default/UnloadedProject/UnloadedProjects/=72b64ab1_002D33f9_002D4144_002D91ca_002D47d5856246fa_0023Day3/@EntryIndexedValue">True</s:Boolean>
 	<s:Boolean x:Key="/Default/UnloadedProject/UnloadedProjects/=9079e189_002D408f_002D4822_002D99cc_002Dbabd1a2bb1bc_0023Day1/@EntryIndexedValue">True</s:Boolean>
 	<s:Boolean x:Key="/Default/UnloadedProject/UnloadedProjects/=94088cd8_002Dc4f6_002D41e0_002Da928_002D754c954991af_0023Day2/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/UnloadedProject/UnloadedProjects/=e2e17975_002D9ed6_002D42ae_002Daeff_002Dbec7fbc25cab_0023Day5/@EntryIndexedValue">True</s:Boolean>
+	
 	<s:Boolean x:Key="/Default/UserDictionary/Words/=Truplicate/@EntryIndexedValue">True</s:Boolean>
 	
 	</wpf:ResourceDictionary>
