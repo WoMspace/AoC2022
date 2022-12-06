@@ -17,9 +17,10 @@ class Piles
 		}
 	}
 
-	public Piles(string initialstate)
+	public Piles(string initialState)
 	{
-		string[] lines = initialstate.Split('\n');
-		
+		string[] lines    = initialState.Split('\n');
+		string   lastLine = lines.Last();
+		lines = lines[0..^2];
 	}
 }
